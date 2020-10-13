@@ -4,8 +4,8 @@ require_relative '../config/environment.rb'
 class Song
 
   extend Memorable::ClassMethods
-  extend Findable
-  extend Paramable
+  extend Findable::ClassMethods
+  extend Paramable::ClassMethods
 
   attr_accessor :name
   attr_reader :artist
