@@ -4,7 +4,7 @@ require 'pry'
 class Artist
 
   extend Memorable::ClassMethods
-  include Findable::ClassMethods
+  include Findable::InstanceMethods
   include Paramable::InstanceMethods
 
   attr_accessor :name
